@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+   /* box-sizing: border-box; */
+}
+
+.read_title , .bill_title , .user_info_title{
+    text-align: center;
+}
+
+/*body{
+    background:url("back2.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    
+
+    
+}*/
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+.main_wrapper1 , .main_wrapper2 , .main_wrapper3 {
+    background: transparent;
+    color: #111;
+    background-color:rgba(255,255,255,.2);
+}
+.navbar{
+    background: transparent;
+    background-color:rgba(243, 0, 0, 0.273);
+
+}
