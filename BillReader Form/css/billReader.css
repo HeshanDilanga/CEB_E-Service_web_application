@@ -33,3 +33,10 @@
     background-color:rgba(243, 0, 0, 0.273);
 
 }
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #720F11 !important;
+    border-color: #720F11 !important;
+}
+/*.border ,.border-danger{
+    border-color: #720F11;
+}*/

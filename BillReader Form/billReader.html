@@ -34,7 +34,7 @@
 <div class="container">
 
 
- 
+ <!--
     <div class="container">
 		<div class="row g-5">
 		 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -82,46 +82,57 @@
         </div>
     </div>
 
+-->
 
- <!--   
-<div class="main_wrapper1 border border-primary rounded p-4 m-4">
-    <h3 class="read_title">Read the bill</h3><hr><br>
-    <div class="read_info form-group"> 
-        <form action="#">
-            <div class="last_month">
-                <label for="last" >Last month meter value</label>
-                <input type="number" class="form-control" id="lastmeter" name="lastMeterValue"><br>
-            </div>
-            <div class="this_month">
-                <label for="this">This month meter value</label>
-                <input type="number" class="form-control" id="thismeter" name="thisMeterValue"><br>
-            </div>
-            <div class="btn_cal d-grid gap-2 col-3 mx-auto p-1 m-2 ">
-                <input type="button"  value="Calculate" class="btn btn-primary">
-            </div>
-        </form>
+<div class="row"> 
+
+    <div class="main_wrapper2 border border-danger rounded p-4 m-4 col">
+        <h3 class="user_info_title">Customer Details</h3><hr><br>
+        <div class="user_info">
+            <form action="#">
+                <div class="cus-name">
+                    <label for="status_info">Customer name</label>
+                    <input type="text"  class="form-control" name="cusName"><br>
+                </div>
+                <div class="cus_id">
+                    <label for="status_info">Customer ID</label>
+                    <input type="number"  class="form-control" name="cusId"><br>
+                </div>
+                <div class="pay">
+                    <label for="payble">Total Payble</label>
+                    <input type="number" class="form-control" name="total-pay"><br>
+                </div>
+                
+            </form>
+        </div>
+    
+    </div>
+
+
+
+    <div class="main_wrapper1 border border-danger rounded p-4 m-4 col">
+        <h3 class="read_title">Read the bill</h3><hr><br>
+        <div class="read_info form-group"> 
+            <form action="#">
+                <div class="last_month">
+                    <label for="last" >Last month meter value</label>
+                    <input type="number" class="form-control" id="lastmeter" name="lastMeterValue"><br>
+                </div>
+                <div class="this_month">
+                    <label for="this">This month meter value</label>
+                    <input type="number" class="form-control" id="thismeter" name="thisMeterValue"><br>
+                </div>
+                <div class="btn_cal d-grid gap-2 col-3 mx-auto p-1 m-2 ">
+                    <input type="button"  value="Calculate" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    
     </div>
 
 </div>
 
-<div class="main_wrapper2 border border-primary rounded p-4 m-4">
-    <h3 class="user_info_title">User Details</h3><hr><br>
-    <div class="user_info">
-        <form action="#">
-            <div class="pay">
-                <label for="payble">Total Payble</label>
-                <input type="number" class="form-control" id="total_pay" name="total-pay"><br>
-            </div>
-            <div class="status">
-                <label for="status_info">Account status</label>
-                <input type="number"  class="form-control" id="acc_status" name="acc_status">
-            </div>
-        </form>
-    </div>
-
-</div>-->
-
-<div class="main_wrapper3 border border-primary rounded p-4 m-4">
+<div class="main_wrapper3 border border-danger rounded p-5 m-2">
     <h3 class="bill_title">This Month Bill</h3><hr><br>
     <div class="bill_info">
         <form action="#">
