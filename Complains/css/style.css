@@ -1,0 +1,230 @@
+
+
+.pacount {
+
+    font-family: poppins;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+}
+
+.main_header_li{
+    font-family: inter;
+    text-decoration: none;
+    font-size: 14.5px;
+    color: #000000;
+}
+
+
+
+
+
+.email {
+  
+    font-family: poppins;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+    opacity: 0.6;
+
+}
+
+.navbar-light ul {
+    list-style: none;
+}
+
+.second_main_header{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.second_main_header .container {
+    max-width: 100%;
+    padding: 0;
+}
+
+.second_main_header .navbar-nav {
+    margin-left: auto;
+}
+
+.second_main_header .navbar-nav li {
+    font-family: inter;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+    opacity: 0.6;
+}
+
+
+<!--Third Navbar-->
+
+.third_center_wrapper2{
+    background-color: #fff;
+    color: #000000;
+    margin: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.third_header .third_center_wrapper{
+    
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.third_header .third_center_wrapper .pay_bill{
+    font-size: 50px;
+    color: #720F11;
+    font-family: 'Inter', sans-serif;font-family: inter;
+    padding: 10px 30px;
+}
+
+.third_header .third_center_wrapper .paybill_logo img{
+    height: 100%;
+}
+
+.mrsahan{
+    text-align: center;
+    margin-top: 45px;
+}
+
+.total-amount-this-month{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.main-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-box {
+  background-color: #720F11;
+  font-family: inter;
+  color: #FBE326;
+  padding: 6px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 50px;
+  font-size: 26px;
+  margin: -6px;
+}
+
+.red-box2 {
+  background-color: #720F11;
+  font-family: inter;
+  color: #FBE326;
+  padding: 6px;
+  padding-left: 65px;
+  padding-right: 65px;
+  border-radius: 50px;
+  font-size: 26px;
+  margin: -6px;
+}
+
+
+
+
+ 
+ .receipt-container {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px;
+  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: inter;
+  margin-top: 20px;
+}
+
+.account, .name {
+  font-size: 14px;
+  margin-bottom: -5px;
+  text-align: left;
+}
+
+.date {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -15px;
+  margin-bottom: -15px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.item {
+  font-size: 16px;
+}
+
+.price {
+  font-size: 16px;
+}
+
+hr {
+  border-top: 1px black;
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+
+.pay-btn-all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.pay-btn {
+  background-color: #152232;
+  color: white;
+  border: none;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  padding-left: 65px;
+  padding-right: 65px;
+  border-radius: 50px;
+  font-size: 26px;
+}
+
+.Notoce_box{
+    display: flex;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.Notice{
+  background-color: #017E1D;
+  
+  color: #ffffff;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 15px;
+  padding-top: 20px;
+  font-size: 17px;
+  margin: 20px;
+  text-align: justify;
+}
+
+.Notice p1{
+    font-size: 30px;
+    align-items: center;
+    font-family: inter;
+
+}
