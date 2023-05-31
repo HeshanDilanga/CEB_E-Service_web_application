@@ -16,10 +16,37 @@
     </head>
     <body>
 
+       <!-- Loading Gif Start-->
+
+   <div id="loader-container" class="loader-container">
+      <img src="img/loading.gif" class="loader-image" alt="Loading...">
+   </div>
+
+
+   <script>
+      // Function to show the loader
+      function showLoader() {
+         document.getElementById("loader-container").style.display = "flex";
+      }
+
+      // Function to hide the loader
+      function hideLoader() {
+         document.getElementById("loader-container").style.display = "none";
+      }
+
+      // Show the loader initially
+      showLoader();
+
+      // Hide the loader after 2 seconds
+      setTimeout(hideLoader, 2000);
+   </script>
+
+<!-- Loading Gif End-->
+
         <nav class="navbar navbar-dark navbar-expand-sm" style="background-color:#720F11;">
 
      <div class="container">
-        <a href="" class="navbar-brand main-logo-container">
+        <a href="Main Home Page.html" class="navbar-brand main-logo-container">
             <img src="img/CebLogo.png" class="main-logo"> </a>
      </div>
     </nav>
@@ -40,14 +67,11 @@
         <h1 class="mt-1 mb-1 pb-1" style="text-align: center;">Customer Registration</h1>
 
       <form id="registration-Form-ID" method="post" name="Registration-Form" onsubmit="return validateLogin()">
-        <div class="form-group mb-4">
-          <label for="user-type" style="color: white;">User Type:</label>
-          <select id="user-type" name="user-type" class="Registorlogininput">
-            <option value="option1" style="color: white; background-color: #720F11;">Bill Reader</option>
-            <option value="option2" style="color: white; background-color: #720F11;">Customer</option>
-          </select>
+        
+        <div class="form-group">
+          <label for="NIC" style="color: white;">Account No:</label>
+          <input type="text" id="AccountNo" name="AccountNo" required class="Registorlogininput" placeholder="Account Number">
         </div>
-
         <div class="form-group">
           <label for="NIC" style="color: white;">NIC No:</label>
           <input type="text" id="NIC" name="NIC" required class="Registorlogininput" placeholder="NIC Number">
@@ -88,6 +112,42 @@
     </div>
   </div>
 </section>
+
+
+<!--Footer Start-->
+
+<footer>
+   <div class="footer">
+      <div class="container">
+      <div class="row">
+         <div class="col-lg-4 col-md-6 col-sm-12 width">
+         <div class="img1">
+            <img src="img/Presedentsite1.png" class="footer-image">
+         </div>
+         </div>
+
+         <div class="col-lg-4 col-md-6 col-sm-12 width">
+         <div class="img1">
+            <img src="img/Presedentsite2.png" class="footer-image">
+         </div>
+         </div>
+
+         <div class="col-lg-4 col-md-6 col-sm-12 width">
+         <div class="img1">
+            <img src="img/Presedentsite3.png" class="footer-image">
+         </div>
+         </div>
+
+         </div>
+      </div>
+   </div>
+</footer>
+
+<div class="copyright">
+   <p>Copyright @ 2023 Ceylon Electricity Board</p>
+</div>
+
+<!--Footer End-->
 
             
     </body>

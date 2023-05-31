@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>multi step form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	
+</head>
+<body>
+
+	<!-- Loading Gif Start-->
+
+   <div id="loader-container" class="loader-container">
+      <img src="img/loading.gif" class="loader-image" alt="Loading...">
+   </div>
+
+
+   <script>
+      // Function to show the loader
+      function showLoader() {
+         document.getElementById("loader-container").style.display = "flex";
+      }
+
+      // Function to hide the loader
+      function hideLoader() {
+         document.getElementById("loader-container").style.display = "none";
+      }
+
+      // Show the loader initially
+      showLoader();
+
+      // Hide the loader after 2 seconds
+      setTimeout(hideLoader, 2000);
+   </script>
+
+<!-- Loading Gif End-->
+
+
+<!-- Nav bar start-->
+	<nav class="navbar navbar-dark navbar-expand-sm" style="background-color:#720F11;">
+
+	 <div class="container">
+		<a href="Main Home Page.html" class="navbar-brand main-logo-container" style="align-content: center;">
+			<img src="img/CebLogo.png" class="main-logo">
+		</a>
+
+	 </div>
+	</nav>
+
+   <!-- Nav bar end-->
+
+
+	<div class="wrapper">
+		<div class="header">
+			<ul>
+				<li class="active form_1_progessbar">
+					<div>
+						<p>1</p>
+					</div>
+				</li>
+				<li class="form_2_progessbar">
+					<div>
+						<p>2</p>
+					</div>
+				</li>
+				<li class="form_3_progessbar">
+					<div>
+						<p>3</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="form_wrap">
+			<div class="form_1 data_info">
+				<h2>Personal Information</h2>
+				<form>
+					<div class="form_container">
+						<div class="input_wrap">
+							<label for="FullName">Full Name of Applicant*</label>
+							<input type="text" name="Full_Name" id="FullName" placeholder="Eg: Rajapaksha Durayalage Indika Wickramathilaka" required="">
+						</div>
+						<div class="input_wrap">
+							<label for="NameWithinItials">Name with initial*</label>
+							<input type="text" name="Name_With_Initials" id="NameWithinItials" placeholder="Eg: R.D.I. Wickramathilaka" required="">
+						</div>
+						<div class="input_wrap">
+							<label for="NIC">NIC*</label>
+							<input type="text" name="NIC" id="NIC" required="">
+						</div>
+						<div class="input_wrap">
+							<label for="PostalAddress">Postal Address</label>
+							<input type="text" name="Postal_Address" id="PostalAddress">
+						</div>
+						<div class="input_wrap">
+							<label for="E-mail">Email Address*</label>
+							<input type="email" name="E-mail" id="E-mail">
+						</div>
+						<div class="input_wrap">
+							<label for="Mobile_Number">Mobile Number</label>
+							<input type="text" name="Mobile_Number" id="Mobile_Number" placeholder="077-xxxxxxx" required>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="form_2 data_info" style="display: none;">
+				<h2>Connection Request</h2>
+				<form>
+					<div class="form_container">
+						<div class="input_wrap">
+							<label for="Electricity_Category">Electricity Category</label>
+							<select name="Electricity_Category" id="Electricity_Category">
+								<option value="domestic">Domestic</option>
+								<option value="Religious">Religiuous & Charitable Institution</option>
+								<option value="Industrialc">Industrial</option>
+								<option value="General Purpose">General Purpose</option>
+								<option value="Hotel">Hotel</option>
+								<option value="Government">Government</option>
+							</select style="width: 100%">
+						</div>
+						<div class="input_wrap">
+							<label for="first_name">######(Test)</label>
+							<input type="text" name="firstname" id="first_name">
+						</div>
+						<div class="input_wrap">
+							<label for="last_name">######</label>
+							<input type="text" name="lastname" id="last_name">
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="form_3 data_info" style="display: none;">
+				<h2>Connection Request</h2>
+				<form>
+					<div class="form_container">
+						<div class="input_wrap">
+							<label for="current_company">######</label>
+							<input type="text" name="Current Company" id="currentcompany">
+						</div>
+						<div class="input_wrap">
+							<label for="total_experience">######</label>
+							<input type="text" name="totalexperience" id="total_experience">
+						</div>
+						<div class="input_wrap">
+							<label for="designation">######</label>
+							<input type="text" name="designation" id="designation">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="btns_wrap">
+			<div class="common_btns form_1_btns">
+				<button type="button" class="btn-next">Next
+					<span class="icon">
+						<ion-icon name="arrow-forward-outline"></ion-icon>
+					</span>
+				</button>
+			</div>
+			<div class="common_btns form_2_btns" style="display: none;">
+				<button type="button" class="btn-back">
+					<span class="icon">
+						<ion-icon name="arrow-back-outline"></ion-icon>
+					</span>
+					Back
+				</button>
+				<button type="button" class="btn-next">Next
+					<span class="icon">
+						<ion-icon name="arrow-forward-outline"></ion-icon>
+					</span>
+				</button>
+			</div>
+			<div class="common_btns form_3_btns" style="display: none;">
+				<button type="button" class="btn-back">
+					<span class="icon">
+						<ion-icon name="arrow-back-outline"></ion-icon>
+					</span>
+					Back
+				</button>
+				<button type="button" class="btn_done">Done
+					<span class="icon"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal_wrapper">
+		<div class="shadow"></div>
+		<div class="success_wrap">
+			<span class="model_icon">
+				<ion-icon name="checkmark-outline"></ion-icon>
+			</span>
+			<p>Your have successfully completed the process</p>
+		</div>
+	</div>
+
+	<!--Footer Start-->
+
+<footer>
+   <div class="footer">
+      <div class="container">
+      <div class="row">
+         <div class="col-lg-4 col-md-6 col-sm-12 width">
+         <div class="img1">
+            <img src="img/Presedentsite1.png" class="footer-image">
+         </div>
+         </div>
+
+         <div class="col-lg-4 col-md-6 col-sm-12 width">
+         <div class="img1">
+            <img src="img/Presedentsite2.png" class="footer-image">
+         </div>
+         </div>
+
+         <div class="col-lg-4 col-md-6 col-sm-12 width">
+         <div class="img1">
+            <img src="img/Presedentsite3.png" class="footer-image">
+         </div>
+         </div>
+
+         </div>
+      </div>
+   </div>
+</footer>
+
+<div class="copyright">
+   <p>Copyright @ 2023 Ceylon Electricity Board</p>
+</div>
+
+<!--Footer End-->
+
+	<script type="text/javascript" src="Javascript/Scripts.js"></script>
+
+
+
+	<script>
+		
+		var form_1 = document.querySelector(".form_1");
+var form_2 = document.querySelector(".form_2");
+var form_3 = document.querySelector(".form_3");
+
+var form_1_btns = document.querySelector(".form_1_btns");
+var form_2_btns = document.querySelector(".form_2_btns");
+var form_3_btns = document.querySelector(".form_3_btns");
+
+var form_1_next_btn = document.querySelector(".form_1_btns .btn-next");
+var form_2_back_btn = document.querySelector(".form_2_btns .btn-back");
+var form_2_next_btn = document.querySelector(".form_2_btns .btn-next");
+var form_3_back_btn = document.querySelector(".form_3_btns .btn-back");
+
+var form_2_progessbar = document.querySelector(".form_2_progessbar");
+var form_3_progessbar = document.querySelector(".form_3_progessbar");
+
+var btn_done = document.querySelector(".btn_done");
+var modal_wrapper = document.querySelector(".modal_wrapper");
+var shadow = document.querySelector(".shadow");
+
+form_1_next_btn.addEventListener("click", function(){
+	form_1.style.display = "none";
+	form_2.style.display = "block";
+
+	form_1_btns.style.display = "none";
+	form_2_btns.style.display ="flex";
+
+	form_2_progessbar.classList.add("active");
+});
+
+form_2_back_btn.addEventListener("click", function(){
+	form_1.style.display = "block";
+	form_2.style.display = "none";
+
+	form_1_btns.style.display = "flex";
+	form_2_btns.style.display ="none";
+
+	form_2_progessbar.classList.remove("active");
+});
+
+form_2_next_btn.addEventListener("click", function(){
+	form_2.style.display = "none";
+	form_3.style.display = "block";
+
+	form_2_btns.style.display = "none";
+	form_3_btns.style.display ="flex";
+
+	form_3_progessbar.classList.add("active");
+});
+
+form_3_back_btn.addEventListener("click", function(){
+	form_2.style.display = "block";
+	form_3.style.display = "none";
+
+	form_2_btns.style.display = "flex";
+	form_3_btns.style.display ="none";
+
+	form_3_progessbar.classList.remove("active");
+});
+
+btn_done.addEventListener("click", function(){
+	modal_wrapper.classList.add("active");
+})
+
+shadow.addEventListener("click", function(){
+	modal_wrapper.classList.remove("active");
+})
+		
+	</script>
+
+
+
+</body>
+</html>

@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<title>payement</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Home page</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" href="js/bootstrap.js">
 
 
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+	
 </head>
 <body>
-
 	<!-- Loading Gif Start-->
 
    <div id="loader-container" class="loader-container">
@@ -46,7 +45,7 @@
 	<nav class="navbar navbar-dark navbar-expand-sm" style="background-color:#720F11;">
 
 	 <div class="container">
-		<a href="" class="navbar-brand main-logo-container">
+		<a href="index.html" class="navbar-brand main-logo-container">
 			<img src="img/CebLogo.png" class="main-logo"> </a>
 
 		<button class="navbar-toggler" data-toggle="collapse" data-target="#ccsl"> <span class="navbar-toggler-icon"></span> </button>
@@ -117,78 +116,114 @@
 	</div>
 </div>
 
-	
+	<!--Payement gateway-->
+		<div class="container1 mt-0" style="margin-top: 5px;" >
+			<form action="">
+				<div class="row1">
+					<div class="col1">
+						<h3 class="title1">billing address</h3>
+						<div class="inputBox1" >
+							<span>Full Name :</span>
+							<input type="text" placeholder="John Leo">
+						</div>
+							
+						<div class="inputBox1" >
+							<span>E-mail :</span>
+							<input type="email" placeholder="example@gmail.com">
+						</div>
+							
+						<div class="inputBox1" >
+							<span>Address :</span>
+							<input type="text" placeholder="gold - street - Kandy">
+						</div>
+							
+						<div class="inputBox1" style="margin: 15px 0;">
+							<span>City :</span>
+							<select class="form-select" style="width:100%; border: 1px solid #ccc;padding:10px 15px;text-transform:none;" id="listBox">
+								<option value="Colombo">Colombo</option>
+								<option value="Gampaha">Gampaha</option>
+								<option value="Kalutara">Kalutara</option>
+								<option value="Kandy">Kandy</option>
+								<option value="Matale">Matale</option>
+								<option value="Nuwara Eliya">Nuwara Eliya</option>
+								<option value="Galle">Galle</option>
+								<option value="Matara">Matara</option>
+								<option value="Hambantota">Hambantota</option>
+								<option value="Jaffna">Jaffna</option>
+								<option value="Kilinochchi">Kilinochchi</option>
+								<option value="Mannar">Mannar</option>
+								<option value="Vauniya">Vauniya</option>
+								<option value="Mullaitive">Mullaitive</option>
+								<option value="Batticaloa">Batticaloa</option>
+								<option value="Ampara">Ampara</option>
+								<option value="Trincomalee">Trincomalee</option>
+								<option value="Kurunegala">Kurunegala</option>
+								<option value="Puttalam">Puttalam</option>
+								<option value="Anuradhapura">Anuradhapura</option>
+								<option value="Polonnaruwa">Polonnaruwa</option>
+								<option value="Badulla">Badulla</option>
+								<option value="Moneragala">Moneragala</option>
+								<option value="Ratnapura">Ratnapura</option>
+								<option value="Kegalle">Kegalle</option>
+							</select>
+						</div>
+							
+					</div>
+					<div class="col1">
+						<h3 class="title1">payement</h3>
+						<div class="inputBox1" >
+								<span>Cards Accepted</span>
+								<img src="img/card_img.png" alt="">
+							</div>
+							
+							<div class="inputBox1" >
+								<span>Credit Card Number :</span>
+								<input type="number" placeholder="1111-2222-3333-4444">
+							</div>
+							
+							<div class="inputBox1" >
+								<span>Exp Month :</span>
+								<select class="form-select" style="width:100%; border: 1px solid #ccc;padding:10px 15px;text-transform:none;" id="listBox">
+									<option value="January">January</option>
+									<option value="February">February</option>
+									<option value="March">March</option>
+									<option value="April">April</option>
+									<option value="May">May</option>
+									<option value="June">June</option>
+									<option value="July">July</option>
+									<option value="August">August</option>
+									<option value="September">September</option>
+									<option value="Octomber">Octomber</option>
+									<option value="November">November</option>
+									<option value="December">December</option>
+								</select>
+							</div>
+							
+							<div class="flex1">
+								<div class="inputBox1">
+									<span>Exp Year :</span>
+									<select class="form-select"  id="listBox" style="width:100px; border: 1px solid #ccc;padding:10px 15px;text-transform:none;">
+										<option value="">2023</option>
+										<option value="">2024</option>
+										<option value="">2025</option>
+										<option value="">2026</option>
+										<option value="">2027</option>
+										<option value="">2028</option>
+									</select>
+								</div>
+								<div class="inputBox1">
+									<span>CVV :</span>
+									<input type="text" placeholder="12345">
+								</div>
+							</div>
+					</div>
+				</div>
+					<input type="submit" value="proceed to checkout" class="submit-btn1">
+			</form>
+		</div>
 
 
-	<!--middle left-->
-	<div class="container">
-		<div class="row g-5">
-
-		 <div class="col-lg-6 wow fadeInUp"data-wow-delay="0.3s">
-			<div class="position-relative h-100">
-			<h2 class="mrsahan"><b>Mr.Sahan Perera</b></h2>
-			<h6 class="total-amount-this-month">Total Amount This Month</h6>
-			<div class="main-price">
-  				<div class="red-box">
-   					 Rs.1500.00
-  				</div>
-			</div>
-
-			<h6 class="total-amount-this-month">Total Units This Month</h6>
-			<div class="main-price">
-  				<div class="red-box2">
-   					 0258
-  				</div>
-			</div>
-
-			<div class="Notoce_box">
-				<div class="Notice">
-					<p1><b> Thank Notice</b></p1><hr>
-				<p>Thank you for joining us with no arrears until last month. We are ready to give you more relief in the future. We request you to continue the relationship..</p>
-			</div>
-			</div>
-			
-
-			</div>
-		 </div>
-
-		 <div class="col-lg-6 wow fadeInUp"data-wow-delay="0.3s">
-		 	<div class="receipt-container">
-  				<h1 class="title">Pay Bill Online</h1>
-  				<p class="account">Account number 01010101</p>
-  				<p class="name">Mr. Saham Perera</p>
-  				<p class="date">June 2023</p>
-  				
-  				<div class="item-container">
-  				  <p class="item">Number Of Units Consumed</p>
-  				  <p class="price">55</p>
-  				</div>
-  				<hr>
-  				<div class="item-container">
-  				  <p class="item">Charge for electricity consumed</p>
-  				  <p class="price">1500</p>
-  				</div>
-  				<hr>
-  				<div class="item-container">
-  				  <p class="item">Adjustments/Rebates</p>
- 				   <p class="price">1200</p>
-  				</div>
-  				<hr>
-  				<div class="item-container">
-  				  <p class="item">Total Amount Due</p>
-  				  <p class="price">2700</p>
-  				</div>
-  				<hr>
-  				<div class="pay-btn-all">
-  					<a href="Pay My Bill.html" style="text-decoration: none; color: white; "><button class="pay-btn">Pay now</button></a>
-  				</div>
-  				
-			</div>
-		 </div>
-		</div>		
-	</div>
-
-	<!--Footer Start-->
+		<!--Footer Start-->
 
 <footer>
    <div class="footer">
@@ -223,12 +258,9 @@
 
 <!--Footer End-->
 
-
-	
-
+			
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
 </body>
 </html>
