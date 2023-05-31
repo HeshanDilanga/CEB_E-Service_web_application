@@ -2,8 +2,9 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-   /* box-sizing: border-box; */
+   
 }
+
 
 .read_title , .bill_title , .user_info_title{
     text-align: center;
@@ -40,3 +41,8 @@
 /*.border ,.border-danger{
     border-color: #720F11;
 }*/
+
+hr.new1 {
+    border-top: 1px solid red;
+  }
+  
