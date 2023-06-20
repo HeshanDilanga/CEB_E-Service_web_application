@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home page</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" href="js/bootstrap.js">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" >
+    </head>
+    <body>
+    
+        <!-- Loading Gif Start-->
+    
+        <div id="loader-container" class="loader-container">
+            <img src="img/loading.gif" class="loader-image" alt="Loading...">
+         </div>
+      
+      
+         <script>
+            // Function to show the loader
+            function showLoader() {
+               document.getElementById("loader-container").style.display = "flex";
+            }
+      
+            // Function to hide the loader
+            function hideLoader() {
+               document.getElementById("loader-container").style.display = "none";
+            }
+      
+            // Show the loader initially
+            showLoader();
+      
+            // Hide the loader after 2 seconds
+            setTimeout(hideLoader, 2000);
+         </script>
+      
+      <!-- Loading Gif End-->
+      
+      
+      
+          <!--First Navbar-->
+          <nav class="navbar navbar-dark navbar-expand-sm" style="background-color:#720F11;">
+      
+           <div class="container">
+              <a href="" class="navbar-brand main-logo-container">
+                  <img src="img/CebLogo.png" class="main-logo"> </a>
+      
+              <button class="navbar-toggler" data-toggle="collapse" data-target="#ccsl"> <span class="navbar-toggler-icon"></span> </button>
+      
+            <div class="collapse navbar-collapse ms-auto mb-2 mb-lg-0 primary-menu-div" id="ccsl">
+      
+              <div class="main_header_li">
+                  <ul class="navbar-nav">
+                  <li class="nav-item mr-10"> <a href="#" class="nav-link" >Self Guide </a></li>
+                  <li class="nav-item mr-3"> <a href="#" class="nav-link">Account Setting </a></li>
+                  <li class="nav-item mr-3"> <a href="Main Home Page.html" class="nav-link">Log Out </a></li>
+              </ul>
+              </div>
+              
+      
+      
+            </div>
+           </div>
+          </nav>
+      
+          
+          <!--Second Navbar-->
+          <div class="container">
+              <div class="second_main_header">
+              <nav class="navbar navbar-light navbar-expand-sm" style="background-color:#ffffff; color:#000000;">
+                  <a href="" class="navbar-brand">
+                    <a href="home.html" > <img src="img/Rectangle.png" alt=""></a>
+                       
+                      <ul>
+                          <li><c href="#" class="pacount">Personal Account 10101010101</c></li>
+                          <li><c href="#" class="email">malinduheshan@gmail.com</c></li>
+                      </ul>
+                       
+                  </a>
+                  <button class="navbar-toggler" data-toggle="collapse" data-target="#ccsl2"> <span class="navbar-toggler-icon"></span> </button>
+      
+              <div class="collapse navbar-collapse ms-auto mb-2 mb-lg-0" id="ccsl2">
+              
+                  <ul class="navbar-nav">
+                      <li class="nav-item mr-10"> <a href="#" class="nav-link">Pay My Bill</a> </li>
+                      <li class="nav-item mr-3"> <a href="#" class="nav-link">Units History</a> </li>
+                      <li class="nav-item mr-3"> <a href="#" class="nav-link">Billing & Payment History</a> </li>
+                      <li class="nav-item mr-3"> <a href="#" class="nav-link">Complains</a> </li>
+                  </ul>
+              </div>
+              </div>
+              </nav>
+          </div>
+          </div>
+        
+        
+        
+    
+        <!--Third Navbar-->
+    
+        <div class="container-fluid shadow-sm">
+            <div class="container">
+                <div class="third_header">
+                <div class="third_center_wrapper">
+                
+                    <div class="paybill_logo">
+                        
+                      </div>
+                    <div class="pay_bill">
+                        <b>Power Outage</b>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    
+
+	<div class="container mb-5 mt-5" >
+		<form>
+			<div class="form-group col-md-4">
+				<label for="exampleInputEmail1">Account number</label>
+				<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+			
+			</div>
+			<div class="form-group col-md-4">
+				<label for="exampleInputPassword1">Name</label>
+				<input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+			</div>
+            <div class="form-group col-md-4">
+				<label for="exampleInputPassword1">Email address</label>
+				<input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+			</div>
+            <div class="form-group col-md-4">
+				<label for="exampleInputPassword1">Phone number</label>
+				<input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+			</div>
+            <div class="form-group col-md-4">
+                <label for="inputState">Area</label>
+                <select  id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>E</option>
+                    <option>F</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+				<label for="exampleInputPassword1">Complain</label>
+				<textarea class="form-control" placeholder="write your complain" ></textarea>
+			</div><br>
+			<button type="submit" class="btn btn-primary">Send</button>
+		</form>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+    </html>
+    </body>
+    </html>

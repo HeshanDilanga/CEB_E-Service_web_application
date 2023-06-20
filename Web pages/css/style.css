@@ -80,8 +80,10 @@
     padding: 10px 30px;
 }
 
-.third_header .third_center_wrapper .paybill_logo img{
-    height: 100%;
+.third_header .third_center_wrapper .Home-icone img{
+    height: 88%;
+    width: 88%;
+
 }
 
 .mrsahan{
@@ -230,12 +232,4 @@ hr {
     font-family: inter;
 
 }
-
-
-
-
-
-
-<!--Login Form--> 
-
 
